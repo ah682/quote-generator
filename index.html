@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <!--Font Awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+      <!--JQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(86, 201, 247), rgb(219, 253, 255));
+            min-height: 100vh;
+        }
+
+        .my-container {
+            background-color: #ADD8E6; /* Light blue */
+            min-height: 350px;
+            max-height: 350px;
+            max-width: 830px;
+            min-width: 830px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        
+        /* Add the following CSS for your footer */
+        .footer {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            text-align: right;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .media-container {
+            min-height: 35px;
+            max-height: 35px;
+            min-width: 35px;
+            max-width: 35px;
+            border: 2px solid black;
+        }
+
+        .media-holder {
+            position: fixed;
+            width: 20%;
+            height: 20%;
+            right: 75%;
+            top: 85%;
+        }
+
+    </style>
+    <title>Quote Generator</title>
+
+</head>
+<body>
+    <div class="container my-container d-flex flex-column align-items-center justify-content-center" id="quote-box">
+        <div class="text-center font-weight-bold text-white" style="font-size: 30px; height: 150px;" id="text"></div>
+        <div class="text-center font-weight-bold text-white" style="font-size: 30px;" id="author"></div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary font-weight-bold" style="position: fixed; left: 80%; top: 85%" id="new-quote">New Quote</button>
+        </div>
+        <div class="container media-holder justify-content-center d-flex">
+            <a class="btn btn-primary font-weight-bold d-flex justify-content-center align-items-center mr-3" style="width: 35px; height: 35px;" id="tweet-quote" href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank"><i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-primary font-weight-bold d-flex justify-content-center align-items-center" style="width: 35px; height: 35px;" id="tumblr-quote"><i class="fab fa-tumblr"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Add your footer here -->
+    <div class="footer">
+        &copy; 2023 ah682
+    </div>
+    <script src="javascript.js"></script>
+</body>
+<!--Requirement Gatherer-->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
